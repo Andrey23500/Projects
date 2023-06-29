@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Todo List</h1>
+      <p>Do it now</p>
+    </header>
+    <main>
+      <div class="list">
+        <form class="form" action="#">
+          <input placeholder="Новая запись" class="tasks" list="tasks" />
+          <datalist id="tasks">
+            <option value="Есть"></option>
+            <option value="Спать"></option>
+            <option value="Бегит"></option>
+            <option value="Анжуманя"></option>
+          </datalist>
+          <input type="submit" name="Send" value="Добавить" class="submit" />
+        </form>
+        <ul class="todo">
+          <li class="todo__item">
+            <input type="checkbox" />
+            <p>Поспать</p>
+            <div class="btns">
+              <button class="edit"><img src="./assets/edit.svg" /></button>
+              <button class="delete"><img src="./assets/remove.svg" /></button>
+            </div>
+          </li>
+          <li class="todo__item">
+            <input type="checkbox" />
+            <p>Поесть</p>
+            <div class="btns">
+              <button class="edit"><img src="./assets/edit.svg" /></button>
+              <button class="delete"><img src="./assets/remove.svg" /></button>
+            </div>
+          </li>
+          <li class="todo__item">
+            <input type="checkbox" />
+            <p>Поспать</p>
+            <div class="btns">
+              <button class="edit"><img src="./assets/edit.svg" /></button>
+              <button class="delete"><img src="./assets/remove.svg" /></button>
+            </div>
+          </li>
+          <li class="todo__item">
+            <input type="checkbox" />
+            <p>Lorem, ipsum dolor.</p>
+            <div class="btns">
+              <button class="edit"><img src="./assets/edit.svg" /></button>
+              <button class="delete"><img src="./assets/remove.svg" /></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
